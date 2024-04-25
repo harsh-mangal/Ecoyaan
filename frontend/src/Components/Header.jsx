@@ -6,12 +6,12 @@ const Header = () => {
       <div className="navbar">
         <div className="navbar-brand">
         <i class="fa-brands fa-pagelines"></i>
-          <h1>Ecoyaan</h1>
+          <h1><a href="/home">Ecoyaan</a></h1>
         </div>
         <div className="navbar-links">
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
+            <li><a href="/home">Home</a></li>
+            <li> <a href="/about">About Us</a></li>
             <li>Sell On Ecoyaan</li>
             <li>Careers</li>
           </ul>

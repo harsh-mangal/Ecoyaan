@@ -3,7 +3,6 @@ body{
   font-family: "Poppins", sans-serif;
   background-color: #232E26;
   font-style: normal;
-  /* background-image: url("https://th.bing.com/th/id/R.dad870842072586bd32565ef39a28d07?rik=LVVBwf7u2CTZbQ&riu=http%3a%2f%2fcdn.lolwot.com%2fwp-content%2fuploads%2f2015%2f08%2f12-shockingly-huge-traffic-jams-from-around-the-world-4.jpg&ehk=%2fHol0R5806kShv3rYJ1DD3NHenCpiwDok59gXwqdsW8%3d&risl=&pid=ImgRaw&r=0"); */
 }
 .navbar{
   align-items: center;
@@ -24,6 +23,8 @@ body{
   color: green;
   align-items: center;
   display: flex;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  cursor: pointer;
 }
 .navbar-links{
   display: flex;
@@ -39,6 +40,17 @@ body{
   font-weight: 600;
   margin-left: 40px;
   color: #141E17 ;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  cursor: pointer;
+
+}
+.navbar-links li:hover{
+  font-size: 1.5rem !important;
+  color: #557d62;
+  
+}
+.navbar-brand:hover{
+  font-size: 1.2rem;
 }
 .hero-section{
   padding: 100px;
@@ -72,6 +84,7 @@ body{
   border-radius: 50px;
   background-color: #D9EFDE;
   border: none;
+  transition: background-color 0.3s, color 0.3s; 
 }
 .features-section{
   background-color: #D9EFDE;
@@ -153,6 +166,7 @@ body{
   background-color: #D9EFDE;
   font-size: medium;
   font-weight: bold;
+  transition: background-color 0.3s, color 0.3s; 
 }
 .footer{
   align-items: center;
@@ -177,6 +191,7 @@ body{
   background-color: #232E26;
   border: none;
   color: #C8DDCC;
+  transition: background-color 0.3s, color 0.3s; 
 }
 .graphics{
   display: flex;
@@ -234,6 +249,7 @@ body{
   background-color: #D9EFDE;
   border: none;
   width: 200px;
+  transition: background-color 0.3s, color 0.3s; 
 }
 .contact-section{
   height: 70vh;
@@ -253,4 +269,54 @@ body{
   background-color: #232E26;
   border: none;
   color: #C8DDCC;
+  transition: background-color 0.3s, color 0.3s; 
+}
+.contact-section button:hover {
+  background-color: #6f7a71;
+  color: #ffffff;
+}
+.features-section button:hover{
+  background-color: #6f7a71;
+  color: #ffffff;
+}
+.community-2 button:hover {
+  background-color: #415344;
+  color: #FFFFFF; 
+}
+.form button:hover {
+  background-color: #415344;
+  color: #FFFFFF; 
+}
+.hero-button:hover{
+  background-color: #415344;
+  color: #FFFFFF; 
+}
+button{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: #141E17;
+}
+a:hover{
+  color: #557d62;
+}
+.navbar-brand a{
+  color: green;
+}
+.about{
+  padding: 50px 100px;
+  display: flex;
+  color: #D5EBDA;
+  margin-top: 0;
+  padding-top: 50px;
+  font-size: 1.2rem;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  text-align: left;
+  min-width: 40vw;
+}
+.image-about{
+  /* display: flex;
+  flex-direction: row; */
 }
