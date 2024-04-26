@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
   };
 
   return (
@@ -12,10 +12,10 @@ const Header = () => {
       <div className="navbar">
         <div className="navbar-brand">
           <i className="fa-brands fa-pagelines"></i>
-          <h1><a href="/home">Ecoyaan</a></h1>
+          <h1><Link to="/home">Ecoyaan</Link></h1>
         </div>
         {window.innerWidth < 998 ? (
-          // Hamburger menu for smaller screens
+         
           <div className="hamburger-menu" onClick={toggleMenu}><i class="fa-solid fa-bars"></i>
             <div className={`hamburger-icon ${isOpen ? 'open' : ''}`}>
               <span></span>
@@ -24,23 +24,24 @@ const Header = () => {
             </div>
           </div>
         ) : (
-          // Regular navigation links for larger screens
+          
           <div className="navbar-links">
             <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><Link to="/home">Home</Link></li>
+              <li> <Link to="/about">About Us</Link></li>
               <li>Sell On Ecoyaan</li>
+             
               <li>Careers</li>
             </ul>
           </div>
         )}
 
-        {/* Hamburger menu links */}
+       
         {isOpen && window.innerWidth < 998 && (
           <div className="hamburger-menu-links">
             <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><Link to="/home">Home</Link></li>
+              <li> <Link to="/about">About Us</Link></li>
               <li>Sell On Ecoyaan</li>
               <li>Careers</li>
             </ul>
