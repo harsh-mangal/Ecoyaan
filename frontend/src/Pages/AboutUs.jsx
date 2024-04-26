@@ -4,10 +4,19 @@ import Slider from "react-slick";
 const AboutUs = () => {
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 998, // Breakpoint for smaller screens
+        settings: {
+          slidesToShow: 1, // Adjust the number of slides for smaller screens
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div>
