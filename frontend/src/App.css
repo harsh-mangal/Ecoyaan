@@ -661,7 +661,6 @@ a:hover{
     padding: 50px 10px;
     border-radius: 50px;
     height: fit-content;
-
   }
   .image-about{
     display: none;
@@ -674,6 +673,8 @@ a:hover{
     margin-top: 0px;
     padding-top: 0;
     max-width: 300px;
+    margin-left: 20px;
+    margin-bottom: 5px;
   }
   .team-card p{
     max-width: 300px;
@@ -687,9 +688,13 @@ a:hover{
     width: 100vw !important;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
     /* background-position-x: fixed !important; */
     /* position: fixed; */
     /* page-orientation: ; */
+  }
+  body p{
+    max-width: 350px;
   }
   .community{
     /* width: 90vw; */

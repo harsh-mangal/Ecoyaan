@@ -28,7 +28,7 @@ const Features = () => {
           </p>
         </div>
         <div className="card">
-          <img src="https://th.bing.com/th/id/R.5c4d9f4ea790ce600769bf46de4dcb05?rik=ru3KTB1Q2CpAug&riu=http%3a%2f%2fwww.boutiquemama.com%2fwp-content%2fuploads%2f2019%2f11%2ftree-watering-child-planting-garden-water-ki.jpeg&ehk=ySGz6pOp2SGFWUzmM0SpT5Jud3lI%2fL7yigFtaY1UZHo%3d&risl=&pid=ImgRaw&r=0" alt="" />
+          <img src="https://imageio.forbes.com/specials-images/dam/imageserve/1074749548/0x0.jpg?format=jpg&width=1200" alt="" />
           <h1>Long-Term Impact</h1>
           <p>
             Invest in a sustainable future for generations to come. By choosing
