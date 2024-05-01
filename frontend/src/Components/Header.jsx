@@ -1,18 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-const Header = () => {
-  var currheight = document.documentElement.clientHeight;
-window.onresize = function(){
-    if(currheight != document.documentElement.clientHeight) {
-      window.location.reload();
-    }    
-}
-  const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-      
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 998);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
+
+  const handleResize = () => {
+    setIsSmallScreen(window.innerWidth < 998);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="header">
@@ -21,9 +28,10 @@ window.onresize = function(){
           <i className="fa-brands fa-pagelines"></i>
           <h1><Link to="/home">Ecoyaan</Link></h1>
         </div>
-        {window.innerWidth < 998 ? (
-         
-          <div className="hamburger-menu" onClick={toggleMenu}><i class="fa-solid fa-bars"></i>
+
+        {isSmallScreen ? (
+          <div className="hamburger-menu" onClick={toggleMenu}>
+            <i className="fa-solid fa-bars"></i>
             <div className={`hamburger-icon ${isOpen ? 'open' : ''}`}>
               <span></span>
               <span></span>
@@ -31,24 +39,21 @@ window.onresize = function(){
             </div>
           </div>
         ) : (
-          
           <div className="navbar-links">
             <ul>
               <li><Link to="/home">Home</Link></li>
-              <li> <Link to="/about">About Us</Link></li>
+              <li><Link to="/about">About Us</Link></li>
               <li>Sell On Ecoyaan</li>
-             
               <li>Careers</li>
             </ul>
           </div>
         )}
 
-       
-        {isOpen && window.innerWidth < 998 && (
+        {isOpen && isSmallScreen && (
           <div className="hamburger-menu-links">
             <ul>
               <li><Link to="/home">Home</Link></li>
-              <li> <Link to="/about">About Us</Link></li>
+              <li><Link to="/about">About Us</Link></li>
               <li>Sell On Ecoyaan</li>
               <li>Careers</li>
             </ul>
