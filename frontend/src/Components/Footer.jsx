@@ -4,33 +4,31 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-one">
-     
         <div className="address">
           <h1>Registered Address:</h1>
           <p>
             1-N-12T-781/1 Sri Krishna Vilasa, Urvastores, Ashoknagar(MR),
             Mangalore, Dakshina Kannada- 575006, Karnataka, India
           </p>
-          </div>
-          <div className="address">
+        </div>
+        <div className="address">
           <h1>Legal Business Name:</h1>
           <p>
-           <b className="b-companyname">Kindkarma E-Retail Private Limited</b>  
+            <b className="b-companyname">Kindkarma E-Retail Private Limited</b>
             <br />
-        CIN: U47912KA2023PTC182592
-            Telephone: +91 9980490777
+            CIN: U47912KA2023PTC182592 Telephone: +91 9980490777
           </p>
-          </div>
-  
-       
-          
-        
+        </div>
+
         <div className="form">
-          <p>Subscribe to receive updates on blogs, 
-            <br />future launches and more !</p>
+          <p>
+            Subscribe to receive updates on blogs,
+            <br />
+            future launches and more !
+          </p>
           <input type="text" placeholder="Your Email Address" />
           <button>Subscribe!</button>
-        </div>
+               </div>
       </div>
       <div className="footer-two">
         <div className="footer-links">

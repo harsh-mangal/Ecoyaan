@@ -393,10 +393,11 @@ a:hover{
   margin-left: 5px;
 }
 .team{
+  /* display: none !important; */
   background-color: #D9EFDE;
   height: 72vh;
   border-radius: 80px;
-  padding: 50px 100px;
+  padding: 100px 100px;
   color: #212C24;
   display: flex;
   /* align-items: center; */
@@ -415,9 +416,11 @@ a:hover{
   align-items: left;
   text-align: left;
   min-width:  300px;
-  min-height: 350px;
+  max-width: 300px;
+  max-height: 200px;
+  min-height: 310px;
   border-radius: 50px;
-  padding: 30px;
+  padding: 25px;
   margin-right: 50px;
   box-shadow: #141e174e 2px 2px 2px 2px;
   transition: transform 0.3s ease;
@@ -454,6 +457,7 @@ a:hover{
   padding: 50px;
   /* flex-direction: row; */
   padding-top: 10px;
+  
 }
 .button-position{
   padding: 10px 50px;
@@ -477,7 +481,7 @@ a:hover{
   }
   .hero-section{
     /* margin-left: 50px; */
-    padding: 100px 20px;
+    padding: 100px 5px;
     flex-wrap: wrap;
     gap: 1rem;
     
@@ -558,7 +562,7 @@ a:hover{
     width: 400px;
   }
   .community-2{
-    padding: 5px 30px;
+    padding: 5px 20px;
     width: 90vw;
     height: 170vh;
 
@@ -603,7 +607,8 @@ a:hover{
     width: 250px;
   }
   .navbar{
-    width: 90vw;
+    width: 90vw !important;
+    /* margin-right: 200px !important; */
   }
   .values-section{
     flex-wrap: wrap;
@@ -649,11 +654,14 @@ a:hover{
   }
   .community-book{
     height: 120vh;
+    width: 100vw;
 
   }
   .team{
-    padding: 5px 10px;
+    padding: 50px 10px;
     border-radius: 50px;
+    height: fit-content;
+
   }
   .image-about{
     display: none;
@@ -662,12 +670,42 @@ a:hover{
     display: none;
 
   } */
+  .team-card{
+    margin-top: 0px;
+    padding-top: 0;
+    max-width: 300px;
+  }
+  .team-card p{
+    max-width: 300px;
+  }
   .navbar-brand{
     /* padding: 20px; */
    margin-left: -20px; 
     
   }
- 
+  body{
+    width: 100vw !important;
+    padding: 0;
+    margin: 0;
+    /* background-position-x: fixed !important; */
+    /* position: fixed; */
+    /* page-orientation: ; */
+  }
+  .community{
+    /* width: 90vw; */
+    width: 100vw;
+  }
+ .hero-section{
+  /* width: 100vw !important; */
+  /* padding: 20px; */
+  /* margin: 0; */
+ }
+ .hero-content{
+  padding: -20px !important;
+  margin: 0;
+  text-align: center;
+  /* pa */
+ }
 }
 .fa-bars{
   font-size: 2rem;
@@ -745,3 +783,5 @@ a:hover{
 .anchor-button:hover, .hamburger-menu-links a:hover {
   color: #007bff;
 }
+
+

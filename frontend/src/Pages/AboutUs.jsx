@@ -3,11 +3,11 @@ import Slider from "react-slick";
 
 const AboutUs = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 998, // Breakpoint for smaller screens
@@ -141,10 +141,8 @@ const AboutUs = () => {
       <div className="team">
         <h1>Meet the Team</h1>
         <div>
-          <Slider {...settings}>
-            <div>
-              <div className="page-team-1">
-                <div className="team-card">
+          <Slider className="slider" {...settings}>
+          <div className="team-card">
                   <img
                     src="https://ecoyaan.com/images/about-us-social-media-team-02.png"
                     alt=""
@@ -188,10 +186,6 @@ const AboutUs = () => {
                     small business
                   </p>
                 </div>
-              </div>
-            </div>
-            <div>
-              <div className="page-team-1">
                 <div className="team-card">
                   <img
                     src="https://ecoyaan.com/images/about-us-product-team-02.png"
@@ -226,8 +220,7 @@ const AboutUs = () => {
                   <h2>TEAM ECOYAAN</h2>
                   <p>This spot awaits you. <br />Check out our <button className="button-position">Open positions</button></p>
                 </div>
-              </div>
-            </div>
+
           </Slider>
         </div>
       </div>

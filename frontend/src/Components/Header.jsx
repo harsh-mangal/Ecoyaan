@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const Header = () => {
+  var currheight = document.documentElement.clientHeight;
+window.onresize = function(){
+    if(currheight != document.documentElement.clientHeight) {
+      window.location.reload();
+    }    
+}
   const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
       setIsOpen(!isOpen);
+      
   };
 
   return (
